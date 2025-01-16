@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100vw;
+  height: 75px;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+}
+.navbar h1 {
+  margin-left: 16px;
+  font-size: 30px;
+  color: #cfa984;
+}
+
+.navbar ul {
+  width: 300px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar ul a {
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+}
+
+.container {
+  width: 100vw;
+  height: calc(100vh - 75px);
+  background-image: url(Images/home-2-hotspot-img1.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.container button {
+  width: 110px;
+  height: 42px;
+  background-color: #f78f10;
+  border: none;
+  margin-bottom: 28px;
+  color: white;
+  font-size: 16px;
+}
+
+.section1 {
+  width: 100vw;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+.section1 h1 {
+  font-size: 50px;
+  color: #aa7f3b;
+}
+
+.section1 p {
+  font-size: 20px;
+}
+
+.section1 img {
+  width: 80%;
+  height: 350px;
+  margin: 10px;
+}
+
+.cardsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* border: 2px solid black; */
+}
+
+.cards {
+  width: 30%;
+  height: 600px;
+  /* border: 2px solid black; */
+}
+
+.cards h2 {
+  font-size: 30px;
+  color: #aa7f3b;
+}
+
+figcaption {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.cards p {
+  font-size: 26px;
+  color: #aa7f3b;
+  margin-bottom: 20px;
+}
+
+.cards button {
+  width: 110px;
+  height: 42px;
+  background-color: #f78f10;
+  border: none;
+  color: white;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1000px) {
+  .cards {
+    width: 33.33%;
+  }
+  .section1 img {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .cards {
+    width: 49%;
+  }
+  .section1 img {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .cards {
+    width: 100%;
+  }
+  .cards h2 {
+    font-size: 25px;
+  }
+  .section1 img {
+    width: 95%;
+  }
+  .section1 h1 {
+    font-size: 30px;
+  }
+  .section1 p {
+    font-size: 20px;
+  }
+}
+
+.section2 {
+  width: 100%;
+  height: 300px;
+  border: 2px solid black;
+  background-image: url(Images/bg-header.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.section3 {
+  width: 100vw;
+  text-align: center;
+}
+
+.section3 h1 {
+  color: #f78f10;
+}
+
+.aboutdiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  border: 2px solid black;
+}
+.aboutdiv p {
+  width: 60%;
+}
+
+.aboutdiv img {
+  margin: 16px;
+  width: 407px;
+  height: 375px;
+}
+
+.footer1 {
+  width: 100%;
+  height: 100px;
+  border: 2px solid black;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding-top: 16px;
+  background-color: #ba7d1a;
+}
+.footer1 p {
+  font-size: 16px;
+}
+
+.footer2 {
+  text-align: center;
+  font-size: 16px;
+}
+.footer2 a {
+  text-decoration: none;
+  color: black;
+}

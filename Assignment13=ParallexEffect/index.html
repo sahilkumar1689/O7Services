@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .parallax-container {
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        perspective: 10px;
+        scroll-behavior: smooth;
+      }
+
+      .parallax-section {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform-style: preserve-3d;
+      }
+
+      .parallax-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: translateZ(-10px) scale(2);
+        z-index: -1;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .content {
+        background: rgba(0, 0, 0, 0.8);
+        padding: 2rem;
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+        max-width: 800px;
+        margin: 0 1rem;
+      }
+
+      .section1 .parallax-bg {
+        background-image: url(Images/img1.jpg);
+        /* Tree sunset image */
+      }
+
+      .section2 .parallax-bg {
+        background-image: url(Images/img2.jpg);
+        /* Dandelion image */
+      }
+
+      .section3 .parallax-bg {
+        background-image: url(Images/img3.jpg);
+        /* Rocky beach image */
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        font-family: "Arial", sans-serif;
+        color: white;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+      }
+
+      .text-section {
+        background: #1a1a1a;
+        padding: 4rem 2rem;
+        color: white;
+      }
+
+      .text-content {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .cta-button {
+        display: inline-block;
+        padding: 1rem 2rem;
+        background: #e74c3c;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: transform 0.3s ease;
+      }
+
+      .cta-button:hover {
+        transform: translateY(-3px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parallax-container">
+      <section class="parallax-section section1">
+        <div class="parallax-bg"></div>
+        <div class="content">
+          <h1>Nature's Beauty</h1>
+          <p>Discover the serene beauty of a sunset behind the tree of life</p>
+          <a href="#" class="cta-button">Explore More</a>
+        </div>
+      </section>
+
+      <div class="text-section">
+        <div class="text-content">
+          <h1>Our Journey</h1>
+          <p>
+            Embark on a visual journey through nature's most breathtaking
+            moments.
+          </p>
+        </div>
+      </div>
+
+      <section class="parallax-section section2">
+        <div class="parallax-bg"></div>
+        <div class="content">
+          <h1>Delicate Details</h1>
+          <p>Every moment in nature holds its own unique beauty</p>
+          <a href="#" class="cta-button">Learn More</a>
+        </div>
+      </section>
+
+      <div class="text-section">
+        <div class="text-content">
+          <h1>Natural Wonders</h1>
+          <p>Experience the raw power and beauty of Earth's landscapes.</p>
+        </div>
+      </div>
+
+      <section class="parallax-section section3">
+        <div class="parallax-bg"></div>
+        <div class="content">
+          <h1>Coastal Majesty</h1>
+          <p>
+            Where land meets sea in a spectacular display of natural artistry
+          </p>
+          <a href="#" class="cta-button">Discover More</a>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
