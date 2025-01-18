@@ -1,0 +1,80 @@
+
+/* container adjustment  */
+.container {
+          position: relative;
+          width: 200px;
+          height: 200px;
+        }
+        /* dot size define */
+        .dot {
+          position: absolute;
+          width: 40px;
+          height: 40px;
+          background: cyan;
+          border-radius: 50%;
+        }
+
+        /* 5 dots adjustment as star  */
+        .dot1 { margin-top: 80px; margin-left: 600px; transform: translateX(-50%); }
+    .dot2 { margin-top: 220px; margin-left: 750px; transform: translateY(-50%); }
+    .dot3 { margin-top: 340px; margin-left: 642px; transform: translate(50%, 50%); }
+    .dot4 { margin-top: 345px; margin-left: 495px; transform: translate(-50%, 50%); }
+    .dot5 { margin-top: 220px; margin-left: 400px; transform: translateY(-50%); }
+
+    /* animated dot styling  */
+    .dot6{ width: 40px;
+          height: 40px;
+          background-color: rgb(39, 84, 84);
+          box-shadow: 0 0 10px 5px aquamarine;
+          position: absolute;
+          border-radius: 50%;
+          animation: starPath 15s infinite linear;
+          }
+
+          /* Keyframes  */
+          @keyframes starPath {
+                    0% {
+                      top:80px;
+                      left: 580px;
+                    }
+                    20% {
+                      top: 358px;
+                      left: 661px;
+                    }
+                    40% {
+                      top: 199px;
+                      left: 400px;
+                    }
+                    60% {
+                      top: 200px;
+                      left: 750px;
+                    }
+                    80% {
+                      top: 362px;
+                      left: 475px;
+                    }
+                    100% {
+                      top: 80px;
+                      left: 580px;
+                    }
+                  }
+    
+    
+        
+
+          
+                  /* Line style define  */
+    .line {
+          position: absolute;
+          width: 2px;
+          background: lightgray;
+          transform-origin: top left;
+        }
+
+
+        /* adjusting lines   */
+        .line1 { margin-top: 118px; margin-left: 590px; height: 132%; transform: rotate(20deg); }
+        .line2 { margin-top: 220px; margin-left: 750px; height: 155%;; transform: rotate(90deg); }
+        .line3 { margin-top: 368px; margin-left: 505px; height: 142%; transform: rotate(-118deg); }
+        .line4 { margin-top: 232px; margin-left: 435px; height: 135%; transform: rotate(-59deg); }
+        .line5 { margin-top: 116px; margin-left: 610px; height: 128%;; transform: rotate(-15deg); }
