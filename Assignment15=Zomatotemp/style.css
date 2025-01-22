@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+}
+/* Handle Dropdown Menu: */
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.dropMenu {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  z-index: 1;
+  border: 2px solid black;
+  background-color: whitesmoke;
+  font-size: 18px;
+  border-radius: 10px;
+  font-weight: 300;
+  right: 5px;
+  top: 36px;
+  display: none;
+  color: black;
+}
+.dropMenu ul li {
+  margin: 5px 12px;
+  list-style: none;
+}
+
+.dropMenu ul li:hover {
+  background-color: white;
+}
+
+.container .dropdown:hover .dropMenu {
+  display: inline-block;
+}
+
+/* Hero Section Starts: */
+.header {
+  position: relative;
+  height: 450px;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url(Images/zomatoimg.avif.jpg) center/cover;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 40px;
+  color: white;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.profile {
+  background: #0bea2d;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown {
+  transform: rotate(180deg);
+}
+
+.dropdown:hover {
+  transform: rotate(360deg);
+}
+
+.content {
+  text-align: center;
+  color: white;
+  padding-top: 30px;
+}
+
+.logo {
+  font-size: 100px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.tagline {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.search-container {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.location-input {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  border-right: 1px solid #ddd;
+  min-width: 240px;
+}
+
+.search-input {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+/* Cards Srctions Starts: */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 40px;
+}
+
+.card {
+  width: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: inherit;
+}
+
+.card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: #666;
+}
