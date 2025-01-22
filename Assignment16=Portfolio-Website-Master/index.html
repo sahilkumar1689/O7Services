@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <div class="left">
+        <a href="/">Portfolio</a>
+      </div>
+
+      <div class="right">
+        <a
+          href="https://github.com/sahilkumar1689"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-github"></i>
+          <span>Github</span>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/sahil-kumar-79b203221/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+          <span>Linkedin</span>
+        </a>
+
+        <a href="mailto:sahilkumar32755@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Email</span>
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <!-- SECTION 1: Hero -->
+      <section class="hero-section">
+        <div class="text">
+          <h2>Hi, I'm Sahil Kumar 👋</h2>
+          <p>
+            Hello! My name is Sahil Kumar, and I am a passionate Electronics and
+            Computer Engineering student at Guru Nanak Dev University, currently
+            in my final year of B.Tech with a CGPA of 8.7. I specialize in web
+            development and have hands-on experience in building dynamic,
+            responsive, and user-friendly applications using modern technologies
+            like HTML, CSS, JavaScript, React.js, Node.js, Express, and MongoDB.
+            My journey into web development has been fueled by my curiosity to
+            create impactful digital solutions and enhance user experiences.
+          </p>
+
+          <div class="links">
+            <a href="#skills">
+              <i class="fa-solid fa-code"></i>
+              <span>Skills</span>
+            </a>
+
+            <a href="#testimony">
+              <i class="fa-solid fa-pen"></i>
+              <span>Testimony</span>
+            </a>
+
+            <a href="#contact">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Contact</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="headshot">
+          <img src="images/Photo1.jpg" alt="john doe headshot" />
+        </div>
+      </section>
+
+      <!-- SECTION 2: Skills -->
+      <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <div class="text">
+          I have completed certifications in Full Stack Web Development, C++,
+          and MySQL, which have strengthened my technical foundation. I also
+          have a keen interest in problem-solving and project execution,
+          demonstrated by my internship experiences and projects, including a
+          restaurant web application aimed at improving customer engagement. I
+          am dedicated to continuous learning and aspire to contribute to
+          innovative, scalable solutions in the tech industry.
+        </div>
+
+        <div class="cells">
+          <div class="cell">
+            <img src="images/html-logo.webp" alt="html logo" />
+            <span>HTML</span>
+          </div>
+
+          <div class="cell">
+            <img src="images/css-logo.webp" alt="css logo" />
+            <span>CSS</span>
+          </div>
+
+          <div class="cell">
+            <img src="images/javascript-logo.webp" alt="javascript logo" />
+            <span>JavaScript</span>
+          </div>
+
+          <div class="cell">
+            <img src="images/node-logo.webp" alt="node logo" />
+            <span>Node.js</span>
+          </div>
+
+          <div class="cell">
+            <img src="images/react-logo.webp" alt="react logo" />
+            <span>React.js</span>
+          </div>
+          <div class="cell">
+            <img src="images/ISO_C++_Logo.svg.png" alt="react logo" />
+            <span>C++</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: Testimony -->
+      <section id="testimony" class="testimony-section">
+        <h2>Testimony</h2>
+
+        <div class="group">
+          <div class="person-details">
+            <img src="images/testimony-headshot.webp" />
+            <p>John Doe</p>
+            <p>Frontend Developer</p>
+          </div>
+
+          <div class="text">
+            "Working with Sahil Kumar has been an incredible experience. His
+            passion for web development and his ability to transform ideas into
+            functional and visually appealing solutions are truly commendable.
+            Sahil's expertise in modern technologies like React.js, Node.js, and
+            MongoDB, combined with his dedication to delivering high-quality
+            work, sets him apart as a talented developer. His attention to
+            detail, problem-solving mindset, and collaborative approach make him
+            an invaluable asset to any team. I am confident that his skills and
+            determination will lead him to achieve great success in his
+            professional journey."
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: Contact -->
+      <section id="contact" class="contact-section">
+        <h2>Contact</h2>
+
+        <div class="group">
+          <div class="text">
+            I would love to hear from you! Whether you have a project in mind, a question about my work, or just want to connect, feel free to reach out. I am always open to discussing exciting opportunities, collaborating on innovative ideas, or providing assistance in web development and related fields. You can contact me via email or phone, and I’ll make sure to respond promptly. Let’s connect and create something remarkable together!
+          </div>
+
+          <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+
+            <label for="message">Message</label>
+            <textarea id="message" cols="30" rows="10"></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footcontainer">
+        <p>&#169 2025 sahil Kumar Portfolio</p>
+      </div>
+    </footer>
+  </body>
+</html>
