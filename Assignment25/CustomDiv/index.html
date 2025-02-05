@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+      }
+      .container {
+        text-align: center;
+      }
+      .container h1 {
+        margin-bottom: 20px;
+      }
+      .container form {
+        text-align: justify;
+        font-size: 20px;
+      }
+      #submitButton {
+        padding: 10px 40px;
+      }
+      #customContainer {
+        margin-top: 10px;
+      }
+    </style>
+    <title>Custom Div</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Custom Div:</h1>
+      <form>
+        <label for="#color">
+          Enter Color:
+          <input
+            type="text"
+            id="color"
+            class="userValues"
+            placeholder="Enter Color"
+            required
+          /> </label
+        ><br /><br />
+        <label for="#bgColor">
+          Enter bgColor:
+          <input
+            type="text"
+            id="bgColor"
+            class="userValues"
+            placeholder="Enter bgColor"
+            required
+          /> </label
+        ><br /><br />
+        <label for="#width">
+          Enter width:
+          <input
+            type="text"
+            id="width"
+            class="userValues"
+            placeholder="Enter width"
+            required
+          /> </label
+        ><br /><br />
+        <label for="#height">
+          Enter height:
+          <input
+            type="text"
+            id="height"
+            class="userValues"
+            placeholder="Enter height"
+            required
+          /> </label
+        ><br /><br />
+        <label for="#text">
+          Enter text:
+          <input
+            type="text"
+            id="text"
+            class="userValues"
+            placeholder="Enter text"
+            required
+          /> </label
+        ><br /><br />
+      </form>
+      <button id="submitButton">Create</button>
+      <div id="customContainer"></div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
