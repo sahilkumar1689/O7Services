@@ -13,17 +13,17 @@ e.g. (teen_guna type is: _________) Print in this way
 
 */
 
-// let i_am_array = Array(20).fill().map((elem,idx)=>idx+1);
-// let teen_guna = [];
+let i_am_array = Array(20).fill().map((elem,idx)=>idx+1);
+let teen_guna = [];
 
-// console.log(i_am_array);
-// i_am_array.forEach(it=>console.log(it));
+console.log(i_am_array);
+i_am_array.forEach(it=>console.log(it));
 
-// teen_guna = i_am_array.map(it=>it*3);
-// console.log(teen_guna);
-// console.log("Length of teen_guna is:",teen_guna.length);
-// console.log("teen_guna type is:",typeof(teen_guna));
-// console.log("i_am_array type is:",typeof(i_am_array));
+teen_guna = i_am_array.map(it=>it*3);
+console.log(teen_guna);
+console.log("Length of teen_guna is:",teen_guna.length);
+console.log("teen_guna type is:",typeof(teen_guna));
+console.log("i_am_array type is:",typeof(i_am_array));
 
 
 /*
