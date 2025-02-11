@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      hr {
+        width: 80%;
+        margin: 10px auto;
+        height: 2px;
+        background-color: grey;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(241, 241, 241, 0.743);
+      }
+
+      .container {
+        width: 300px;
+        height: auto;
+        border: 2px solid black;
+        text-align: center;
+      }
+      .container h1 {
+        margin: 20px;
+      }
+      .container #todo {
+        width: 160px;
+        height: 36px;
+        padding-left: 10px;
+        border-radius: 7px;
+        border: 2px solid blue;
+      }
+      .container button {
+        width: 50px;
+        height: 36px;
+        margin-left: 10px;
+        color: white;
+        border-radius: 5px;
+        background-color: rgba(60, 60, 223, 0.842);
+      }
+      .todoContainer {
+        margin-top: 30px;
+        /* border: 2px solid black; */
+      }
+      .todoContainer p {
+        color: rgb(125, 125, 125);
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      .todoItems {
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: row wrap;
+      }
+      .toggleStyle {
+        text-decoration: line-through;
+      }
+    </style>
+    <title>ToDo List</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>TO-DO LIST</h1>
+      <input
+        type="text"
+        name="todo"
+        id="todo"
+        placeholder="Add a new to-do"
+        required
+      />
+      <button id="addToDo">Add</button>
+      <div class="todoContainer"></div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
