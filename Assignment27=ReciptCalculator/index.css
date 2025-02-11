@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  height: 85%;
+  /* border: 2px solid black; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.items {
+  text-align: center;
+  border: 2px solid white;
+}
+.items h1 {
+  background-color: gray;
+  color: white;
+  padding-bottom: 10px;
+}
+.content1,
+.content2,
+.content3 {
+  width: 100%;
+  height: calc(100% - 49px);
+  text-align: center;
+  border: 2px solid rgba(176, 176, 176, 0.703);
+  background-color: rgba(176, 176, 176, 0.703);
+}
+
+.content1 h2 {
+  margin: 20px;
+}
+
+.content1 input,
+button {
+  padding: 10px 20px;
+  margin-top: 16px;
+}
+.content1 button {
+  border: 2px solid black;
+}
+
+.content1 p {
+  font-size: 25px;
+  margin: 30px;
+}
+
+.content1 select {
+  display: block;
+  margin: auto;
+  padding: 8px 80px;
+}
+
+.message1,
+.message2 {
+  margin-top: 30px;
+}
+.message1 p {
+  font-size: 20px;
+}
+
+.unitsBtns {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  column-gap: 10px;
+  margin-top: 10px;
+}
+.btns {
+  border: 2px solid black;
+  width: 150px;
+  height: 30px;
+  border-radius: 3px;
+  background-color: white;
+  cursor: pointer;
+}
+.btns:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+.content2 button {
+  border: 2px solid black;
+}
+
+.content2 p {
+  font-size: 25px;
+  margin: 20px;
+}
+
+.content2 select {
+  padding: 8px 80px;
+}
+
+.content2 label input {
+  width: 50px;
+  height: 30px;
+  padding-left: 10px;
+}
+
+.content2 .cartBtn {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.message3 {
+  width: 96%;
+  margin: 10px auto;
+  background-color: white;
+  text-align: left;
+}
+
+.message3 p {
+  margin: 20px 10px;
+  font-size: 20px;
+}
+
+.message3 table {
+  width: 100%;
+}
